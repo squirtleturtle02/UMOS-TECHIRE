@@ -44,13 +44,73 @@ font-weight:bold;
 a:hover{
     text-decoration: underline
 }
+
 /***************************
 ****************************
 Layout Styles
 ****************************
 ***************************/
+/* CREATE A MAIN CONTAINER
+It pads the left and right 15px to make sure our content does not run directly to the edge and to set up the base for our 30px grid gutter.
+
+It sets the margins to auto center the container on the screen.
+
+It sets max-width:1170px, because when you add the left and right padding with the max-width, you get 1200px which is our large device breakpoint.
+*/
+.container {
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+    max-width:1170px;
+}
 
 
+/* Create A row */
+/*
+Since the .container has a padding of
+ 15px, we add a margin of -15px to the .row to make 
+ it flush with the .container.
+Since the columns will float left for any device larger
+ than extra small, we need to clear our floats.
+  Go to https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/ for more information on clearing floats.
+*/
+.row {
+    margin-right:-15px;
+    margin-left:-15px;
+}
+
+.row::after {
+content: "";
+display:table;
+clear:both;
+}
+
+/* Creat A Column */
+/* This defines a selector that targets all col classes*/
+
+[class*= 'col-'] {
+    width:100%;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+@media (min-width:48em) 
+{
+    [class*= 'col-'] {
+        float:left;
+        }
+        /*
+        1/3 width column
+        */
+    .col-1-3 {
+        width:33.3333%;
+    }
+    /* 2/3 Width Column */
+    .col-2-3 {
+        width:66.6666%;
+    }
+}
 /***************************
 ****************************
 Module Styles
