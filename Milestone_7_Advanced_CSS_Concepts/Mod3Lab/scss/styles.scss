@@ -1,17 +1,13 @@
-$padding: 6px;
+@import "base/normalize";
+@import "base/base";
 
-nav {
-  ul {
-    margin: 0;
-    padding: $padding;
-    list-style: none;
-  }
-
-  li { display: inline-block; }
-
-  a {
-    display: block;
-    padding: $padding 12px;
-    text-decoration: none;
-  }
-}
+/* Import layout Scss into styles.css  */
+@import "layout/layout";
+@import "modules/bg-image";
+@import "modules/buttons";
+@import "modules/header";
+@import "modules/hero";
+@import "modules/logo";
+@import "modules/media";
+@import "modules/nav";
+@import "themes/theme";
