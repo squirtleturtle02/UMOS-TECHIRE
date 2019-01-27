@@ -1,7 +1,6 @@
 @import "base/normalize";
 @import "base/base";
-
-/* Import layout Scss into styles.css  */
+@import "base/media-queries";
 @import "layouts/layout";
 @import "modules/bg-image";
 @import "modules/buttons";
