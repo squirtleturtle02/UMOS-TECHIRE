@@ -1,0 +1,6 @@
+@mixin circle($width) {
+    width: $width;
+    height: $width;
+    /*proper border radius - divide wdth by 2 */
+    border-radius: $width/2;
+}
