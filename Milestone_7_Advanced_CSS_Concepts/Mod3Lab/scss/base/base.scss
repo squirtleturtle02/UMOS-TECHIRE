@@ -24,8 +24,12 @@ body {
   font-weight: normal; 
   color: $text-color;
   //color: $link-color;
+  @include extra-small-only {
+    max-width:100%;
+  }
 }
 h1, h2, h3 {
+  
   font-weight: bold;
 }
 a {

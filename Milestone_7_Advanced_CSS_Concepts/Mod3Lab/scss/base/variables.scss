@@ -1,5 +1,18 @@
+/*Color List:
+- light blue = 00AEEF;
+- dark blue = 1C75BC
+- green = 8DC63F
+- dark green = 009444
+- orange = F7941E
+- dark orange = F15A29
+- brown = 594a42;
+- light-brown: #C49A6C
+*/
+
+
 $green: #8DC63F !default;
 $orange: #F7941E !default;
+$light-brown: #C49A6C; 
 $brown: #594a42 !default;
 $dark-brown: #414042 !default;
 $tan: #e7e1d7 !default;
@@ -10,8 +23,16 @@ $link-color: $green !default;
 
 $primary-mask-color: $orange !default;
 
+/* Background-colors*/
+$background-primary :$orange !default;
 
+$background-secondary : $light-brown !default;
 
+$background-tertiary : $green !default;
+
+$background-quarternary :$brown !default;
+
+$background-quinary : $tan !default; 
 
 
 

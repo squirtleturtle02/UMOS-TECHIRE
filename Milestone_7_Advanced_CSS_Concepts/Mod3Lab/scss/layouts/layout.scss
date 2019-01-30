@@ -13,6 +13,9 @@ Layout Styles
     margin-right: auto;
     margin-left: auto;
     max-width: 1170px;
+    @include extra-small-only {
+      max-width:100%;
+    }
   }
   /* Row */
   .row {
@@ -54,13 +57,21 @@ Layout Styles
     .pull-right-sm {
       float:right;
     }
+    
   }
   
   @media only screen and (max-width : 47.9375em) {
     .remove-gutter-xs {
-      padding-left: 0px;
-      padding-right: 0px;
+      //padding-left: 0px;
+      //padding-right: 0px;
+      
     }
+    .col-1{
+
+    max-width:100%
   }
+}
+
+
   
   

@@ -14,7 +14,36 @@ Header
         content: "";
         display: table;
         clear: both;
-
     }
+  }
+}
+
+.feature-header {
+  background:$green;
+  text-align: center;
+  //padding-top: 18px;
+  //padding-bottom: 18px;
+  color: $tan;
+  @include extra-small-only {
+    position: absolute;
+    z-index: 99;
+    left:15px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 35px;
+    margin-left: 35px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+.head {
+  @include extra-small-only {
+  height: 100%;
+  width: 100%;
+  
+  margin: 0;
+  font-size:20px;
   }
 }
