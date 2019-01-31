@@ -11,7 +11,8 @@ Logo Modules
   @include small-and-above {
     width: auto;
     height: 50px;
-    float: left;
+    /* In a Flexbox container, a margin set to auto will absorb the extra space. This is why the logo pulls to the left side of the container.*/
+    margin-right: auto;    
   }
 }
 .logo-primary img {

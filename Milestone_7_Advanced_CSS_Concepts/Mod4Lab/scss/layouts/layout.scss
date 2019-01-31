@@ -59,3 +59,28 @@ Layout Styles
     padding-right: 0px;
   }
 }
+
+/* Flexbox Layout */ 
+
+@include small-and-above {
+  .flexbox-sm {
+  @include flexbox-display();
+  /* overwrite the float for small flexbox - */
+  [class*='col-'] {
+    float:none;
+    }
+  /* include flex mixin for the col - */
+  .col-2-3 {
+    @include flex(0 1 66.6666%);
+    }
+      /* support addl column width */
+      /* 1/3 column */
+  .col-1-3 {
+    @include flex( 0 1 33.3333% );
+    }
+  /* 1/2 column */ 
+  .col-1-2 {
+    @include flex(0 1 50%)
+    } 
+  }
+}
