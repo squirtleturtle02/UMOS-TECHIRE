@@ -14,4 +14,8 @@
         top: -30px;
         margin: 0 auto;
     }
+    @include medium-and-above {
+        @include circle (230px);
+    }
+
 }
