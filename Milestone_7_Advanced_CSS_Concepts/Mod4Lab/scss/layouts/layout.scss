@@ -61,26 +61,58 @@ Layout Styles
 }
 
 /* Flexbox Layout */ 
-
-@include small-and-above {
-  .flexbox-sm {
-  @include flexbox-display();
-  /* overwrite the float for small flexbox - */
-  [class*='col-'] {
-    float:none;
-    }
-  /* include flex mixin for the col - */
-  .col-2-3 {
-    @include flex(0 1 66.6666%);
-    }
-      /* support addl column width */
-      /* 1/3 column */
-  .col-1-3 {
-    @include flex( 0 1 33.3333% );
-    }
-  /* 1/2 column */ 
-  .col-1-2 {
-    @include flex(0 1 50%)
-    } 
+.flexbox {
+  /* extra small screen */
+  @include  extra-small-only {
+    [class*='col-'] {
+      float:none;
+      }
+       /* include flex-flow */
+       .col-2-3 {
+        @include flex-flow (column wrap);
+        }
+          /* support addl column width */
+          /* 1/3 column */
+      .col-1-3 {
+        @include flex-flow(column wrap);
+        }
+      /* 1/2 column */ 
+      .col-1-2 {
+        @include flex-flow (column wrap)
+        } 
+        /* specific order for small screen*/
+        .second{ order: 2; }
+        .first { order: 1; }
+        /*.flexbox :nth-child(3) { order: 1; }*/
+      }
+  
+/* 768px / 16px = 48em */
+  @include small-and-above {
+    .flexbox-sm {
+      @include flexbox-display();
+      /* overwrite the float for small flexbox - */
+      [class*='col-'] {
+        float:none;
+        }
+      /* include flex mixin for the col - */
+      .col-2-3 {
+        @include flex-flow(0 1 66.6666%);
+        }
+          /* support addl column width */
+          /* 1/3 column */
+      .col-1-3 {
+        @include flex( 0 1 33.3333% );
+        }
+      /* 1/2 column */ 
+      .col-1-2 {
+        @include flex(0 1 50%)
+        } 
+        
+      }
+    .flexbox-sm-row-reverse {
+      -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      }
   }
 }

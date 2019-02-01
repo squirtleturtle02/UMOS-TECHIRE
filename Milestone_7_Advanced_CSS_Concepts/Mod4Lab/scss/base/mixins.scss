@@ -22,3 +22,18 @@ display: flex;
   -ms-flex:  $values;
   flex:  $values;
 }
+@mixin flex-flow($values) {
+  -webkit-box-flex-flow: $values;
+  -moz-box-flex-flow:  $values;
+  -webkit-flex-flow:  $values;
+  -ms-flex-flow:  $values;
+  flex-flow:  $values;
+}
+/* flexbox mix in for order */
+@mixin order ($values ) {
+  -webkit-box-order: $values;
+  -moz-box-order:  $values;
+  -webkit-order:  $values;
+  -ms-order:  $values;
+  flex-order:  $values;
+} 
