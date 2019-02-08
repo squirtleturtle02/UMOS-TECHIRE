@@ -1,0 +1,36 @@
+/*BODY */
+body {
+    margin-left:10px;
+    margin-right:10px;
+}
+/*HEADER STYLING*/
+header {
+background-color: #b8bec6;
+
+} 
+h1 {
+    
+}
+
+/*modules*/
+.center {
+    text-align: center 
+}
+/*margin*/
+.top-margin {
+margin-top:15px;
+}
+.sides {
+    margin-left:10px;
+    margin-right:10px;
+}
+    /* Rounded borders */
+.rounded-border {
+    border: grey solid 2px;
+    border-radius:10px;
+}
+
+/* colors */
+.grey {
+    background-color: #b8bec6;
+}
