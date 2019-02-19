@@ -1,0 +1,62 @@
+/*BODY */
+body {
+    margin-left:10px;
+    margin-right:10px;
+}
+/*HEADER STYLING*/
+header {
+background-color: #b8bec6;
+
+} 
+.head-height{
+    min-height:100px
+}
+
+/*modules*/
+.center {
+    text-align: center;
+}
+.head-center {
+    text-align: center;
+    position:relative;
+    top:25px;
+}
+/* SET SECTION HEIGHT */ 
+.sec-height {
+min-height:200px;
+}
+/* set section styling*/
+.section-head {
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 10px;
+}
+.section-p {
+    top: 25px;
+    position: relative;
+}
+/*margin*/
+.top-margin {
+margin-top:15px;
+}
+.bot-margin {
+    margin-bottom:10px
+}
+.sides {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+    /* Rounded borders */
+.rounded-border {
+    border: grey solid 2px;
+    border-radius:10px;
+}
+
+/* colors */
+.grey {
+    background-color: #b8bec6;
+}
