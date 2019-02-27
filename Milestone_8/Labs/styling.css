@@ -60,3 +60,14 @@ margin-top:15px;
 .grey {
     background-color: #b8bec6;
 }
+
+.modal {
+
+    /*display: block;*/
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    padding-right: 0px;
+}
