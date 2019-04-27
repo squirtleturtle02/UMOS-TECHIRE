@@ -1,0 +1,39 @@
+/***************************
+****************************
+Reset
+****************************
+***************************/
+/*use border box to account for any border and padding into the elements
+width and height*/
+
+html {
+    box-sizing: border-box;
+  }
+
+  /*apply all box sizing elements to Pseudo elements */
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+/***************************
+****************************
+Base Styles
+****************************
+***************************/
+
+body {
+    color: $text_color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  a {
+    color: $link-color;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
